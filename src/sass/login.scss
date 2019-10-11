@@ -1,0 +1,81 @@
+@import 'public';
+body,html{
+    height: 100%;
+}
+#login-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #444141, $alpha: 0.1);
+    overflow: auto;
+    // display: none;
+}
+    #login{
+        width: 350px;
+        height: 400px;
+        padding: 40px;
+        background-color: white;
+        position: fixed;
+        top:50%;
+        left:50%;
+        margin:-230px 0 0 -200px;
+        z-index: 1000;
+        // display: none;
+        #title{
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
+            color: rgb(113, 35, 155);
+            border-bottom:1px solid  rgb(105, 34, 143);
+            #logins{
+                float: left;
+                width: 50%;
+                text-align: center;
+                border-bottom: 3px solid  rgb(105, 34, 143);
+            }
+            #region{
+                float: left;
+                width: 50%;
+                text-align: center;
+                color: black;
+            }
+            #email,#pass{
+                height: 25px;
+                width: 95%;
+                border: 1px solid  rgb(148, 51, 201);
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            p{
+                font-size: 16px;
+            }
+            #sub{
+                color: white;
+                font-weight: 600;
+                background-color:  rgb(105, 34, 143);
+                width: 70%;
+                height: 40px;
+                line-height: 25px;
+                border: none;
+                margin-left:15%;
+            }
+        }
+    }
+    #close_all{
+        position: absolute;
+        top:-25px;
+        right:-25px;
+        width:30px;
+        height:30px;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size:30px;
+        text-align: center;
+        color: white;
+        background-color: #000000;
+        cursor: pointer; 
+        border: 1px solid white;
+        }
+    
+
+  

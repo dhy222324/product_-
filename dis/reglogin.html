@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="css/reglogin.min.css">
+    <script type="text/javascript">
+    window.onload=function () {
+        // var btn=document.getElementById("btn");
+        // var back=document.getElementById("reglogin-box");
+        // var relogin=document.getElementById("reglogin");
+        var login = document.getElementById('login');
+        var close_all=document.getElementById("close_all");
+        // btn.onclick=function (){
+        // back.style.display="block";
+        // reglogin.style.display="block";
+        // }
+        close_all.onclick=function (){
+        // back.style.display="none";
+        // reglogin.style.display="none";
+        location.href="index.html";
+        }
+        login.onclick = function(){
+            location.href = "login.html";
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- <input type="submit" value="弹框" id="btn"> -->
+    <div id="reglogin-box"> </div>
+        <div id="reglogin"> 
+            <span id="close_all">×</span>
+            <div id="title">
+                <div id="login">登入</div>
+                <div id="region">新用户?</div>
+                <input type="text" name="" id="name" placeholder="名字" class="txt">
+                <input type="text" name="" id="username" placeholder="姓氏" class="txt">
+                <input type="text" name="" id="email" placeholder="邮箱" class="txt">
+                <input type="text" name="" id="pass" placeholder="密码" class="txt">
+                <p>请输入8位或以上密码，须包含至少1位数字与字母.</p>
+                <input type="text" name="" id="repass" placeholder="请再次输入密码" class="btn">
+                <p>如果您创建账户, 即代表您同意我们的<a href="#">隐私政策</a>及<a href="#">条款细则</a></p>
+                <div id="check">
+                    <input type="checkbox" name="" id="checkbox">订阅草莓网独家电邮优惠
+                </div>
+                <input type="submit" value="注册" id="sub" >
+            </div>
+        </div>
+</body>
+<script src="js/reglogin.min.js"></script>
+</html>

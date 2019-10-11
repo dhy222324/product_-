@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="css/login.min.css">
+    <script type="text/javascript">
+        window.onload=function () {
+          // var btn=document.getElementById("btn");
+          // var back=document.getElementById("login-box");
+          // var login=document.getElementById("login");
+          var close_all=document.getElementById("close_all");
+          var region =document.getElementById('region');
+          // btn.onclick=function (){
+          //   back.style.display="block";
+          //   login.style.display="block";
+          // }
+          close_all.onclick=function (){
+            // back.style.display="none";
+            // login.style.display="none";
+            location.href="index.html";
+          }
+          region.onclick = function(){
+            location.href = 'reglogin.html';
+          }
+        }
+    </script>
+</head>
+<body>
+    <!-- <input type="submit" value="弹框" id="btn"> -->
+    <div id="login-box"> 
+      <div id="login"> 
+          <span id="close_all">×</span>                                                
+          <div id="title">
+              <div id="logins">登入</div>
+              <div id="region">新用户?</div>
+              <input type="email" name="" id="email" placeholder="邮箱" class="txt">
+              <input type="text" name="" id="pass" placeholder="密码" class="txt" >
+              <p><a href="#">忘记密码</a></p>
+              <input type="submit" value="登入" id="sub" >
+          </div>
+      </div>
+    </div>
+</body> 
+  <script src="js/login.min.js"></script>
+</html>

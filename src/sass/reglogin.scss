@@ -1,0 +1,105 @@
+
+@import 'public';
+body,html{
+    height: 100%;
+}
+#reglogin-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #444141, $alpha: 0.1);
+    // display: none;
+}
+#reglogin{
+    overflow-y: scroll;
+    width: 350px;
+    height: 400px;
+    padding: 40px;
+    background-color: white;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin:-230px 0 0 -200px;
+    z-index: 1000;
+    // display: none;
+    #title{
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+        color: rgb(113, 35, 155);
+        border-bottom:1px solid  rgb(105, 34, 143);
+        #login{
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: black;
+        }
+        #region{
+            float: left;
+            width: 50%;
+            text-align: center;
+            border-bottom: 3px solid  rgb(105, 34, 143);
+        }
+        #email,#pass,#name,#username,#repass{
+            height: 25px;
+            width: 95%;
+            border: 1px solid  rgb(148, 51, 201);
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            color: rgb(6, 1, 8);
+
+        }
+        #check{
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+            margin-left: 10%;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #000000;
+            font-weight: 600;
+            width: 80%;
+            background: rgba(202, 191, 191,0.3) ;
+            #checkbox{
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                background-color: white;
+            }
+         } 
+        #sub{
+            color: white;
+            font-weight: 600;
+            background-color: #46a59d;
+            width: 70%;
+            height: 40px;
+            line-height: 25px;
+            border: none;
+            margin-left:15%;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+}
+#close_all{
+    position: absolute;
+    z-index: 10000;
+    top:0px;
+    right:0px;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size:30px;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    cursor: pointer; 
+    border: 1px solid white;
+    }
